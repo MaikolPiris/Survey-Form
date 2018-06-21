@@ -1,0 +1,118 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<style type="text/css">
+		.container{
+			margin:auto;
+			width: 80%;
+			background-color: #ddd;
+		}
+		.container #titles{
+			text-align: center;
+		}
+		.survey-section{
+			margin:10px 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap:50px;
+		}
+		.survey-section #Description{
+			display: flex;
+			justify-content: flex-end;
+		}
+		textarea{
+			resize:vertical;
+		}
+		label{
+			align-self: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="titles">
+			<h1 id="title" >Survey Form</h1>
+			<p id="description">A simple Survey about you</p>
+		</div>
+		<form id="survey-form">
+			<div class="survey-section">
+				<div id="Description">
+					<label for="" id="name-label">Name</label>
+				</div>
+				<input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+			</div>
+			<div class="survey-section">
+				<div id="Description">
+					<label id="email">EMail</label>
+				</div>
+				<input type="email" id="email" name="email" placeholder="Ingrese su EMAIL">
+			</div>
+			<div class="survey-section">
+				<div id="Description">
+					<label id="number-label">Age</label>
+				</div>
+				<input type="number" id="number" name="number" placeholder="Ingrese Su Edad">
+			</div>
+			<div class="survey-section">
+				<div id="Description">
+					<label>Which option describe your current role</label>
+				</div>
+				<select id="dropdown">
+					<option>Student</option>
+					<option>Full Time Job</option>
+					<option>Full Time Learner</option>
+					<option>Prefer Not to say</option>
+					<option>Other</option>
+				</select>
+			</div>
+			<div class="survey-section">
+				<div id="Description">
+					<label>How likely is that you would recommend freeCodeCamp to a friend?</label>
+				</div>
+				<div class="option">
+					<input type="radio" name="recommend"><label>Definite</label><br>
+					<input type="radio" name="recommend" value="Maybe"><label>Maybe</label><br>
+					<input type="radio" name="recommend" value="Not sure"><label>Not Sure</label><br>
+				</div>
+			</div>
+			<div class="survey-section">
+				<div id="Description">
+					<label>What do you like most in FCC</label>
+				</div>
+				<select id="dropdown">
+					<option>Community</option>
+					<option>Challenges</option>
+					<option>Proyects</option>
+					<option>Open Source</option>
+				</select>
+			</div>
+			<div class="survey-section">
+				<div id="Description">
+					<label>Things that should be improved in the future
+(Check all that apply):</label>
+				</div>
+				<div>
+					<input type="checkbox" name="option" value="v01"><label>Front-end Projects</label><br>
+					<input type="checkbox" name="option" value="v02"><label>Back-end Projects</label><br>
+					<input type="checkbox" name="option" value="v03"><label>Data Visualization</label><br>
+					<input type="checkbox" name="option" value="v04"><label>Challenges</label><br>
+					<input type="checkbox" name="option" value="v05"><label>Open Source Community</label><br>
+					<input type="checkbox" name="option" value="v06"><label>Gitter help rooms</label><br>
+					<input type="checkbox" name="option" value="v07"><label>Videos</label><br>
+					<input type="checkbox" name="option" value="v08"><label>City Meetups</label><br>
+					<input type="checkbox" name="option" value="v09"><label>Wiki</label><br>
+					<input type="checkbox" name="option" value="v10"><label>Forum</label><br>
+					<input type="checkbox" name="option" value="v11"><label>Additional Courses</label><br>
+				</div>
+			</div>
+			<div class="survey-section">
+				<div id="Description">
+					<label>Any Comments or Suggestions?</label>
+				</div>
+				<textarea placeholder="Algún comentario"></textarea>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
